@@ -1,7 +1,17 @@
-<div class="hero-unit">
-    <h1>Image Sharer</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur libero impedit repellendus omnis eos porro quia sequi vero, itaque earum recusandae molestiae error possimus debitis adipisci aut praesentium aliquam veritatis.</p>
-    <p>
-        <%= link_to "Sign Up Now!", "#", class: "btn btn-primary btn-lg" %>
-    </p>
-</div>
+<% if user_signed_in? %>
+
+    <div class="hero-unit">
+        <h1><%= current_user.email %></h1>
+    </div>
+
+<% else %>
+
+    <div class="hero-unit">
+        <h1>Image Sharer</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur libero impedit repellendus omnis eos porro quia sequi vero, itaque earum recusandae molestiae error possimus debitis adipisci aut praesentium aliquam veritatis.</p>
+        <p>
+            <%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+        </p>
+    </div>
+
+<% end %>

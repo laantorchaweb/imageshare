@@ -4,6 +4,10 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
 gem 'rails_12factor', group: :production
+
+gem 'devise'
+gem 'simple_form'
+
 # Use sqlite3 as the database for Active Record if is in developement or testing mode
 group :production do
     gem 'pg'
