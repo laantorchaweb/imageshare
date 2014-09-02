@@ -5,4 +5,6 @@ class User < ActiveRecord::Base
   # add :recoverable when the email is configured
   devise :database_authenticatable, :registerable,
          :rememberable, :trackable, :validatable
+
+  has_many :pins
 end
