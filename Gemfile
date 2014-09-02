@@ -8,6 +8,8 @@ gem 'rails_12factor', group: :production
 gem 'devise'
 gem 'simple_form'
 
+gem "paperclip", "3.5"
+
 # Use sqlite3 as the database for Active Record if is in developement or testing mode
 group :production do
     gem 'pg'
