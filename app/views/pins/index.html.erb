@@ -1,0 +1,19 @@
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Listing pins</div>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Description</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <%= render @pins  %>
+    </tbody>
+  </table>
+</div>
+<br>
+
+<%= link_to 'New Pin', new_pin_path %>
