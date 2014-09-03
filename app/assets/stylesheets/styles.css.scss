@@ -7,3 +7,31 @@ body {
 td .thumbnail {
     width: 240px;
 }
+
+.box {
+    float: left;
+    width: 300px;
+    margin: 5px;
+    padding: 5px;
+    font-size: 11px;
+    line-height: 1.4em;
+
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+
+    img {
+        display: block;
+        width: 100%;
+        border-radius: 5px;
+    }
+}
+
+.jumbotron {
+    img {
+        max-width: 100%;
+    }
+}
+
+.image-title {
+    margin: 10px 0 5px;
+}
